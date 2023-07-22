@@ -1,9 +1,9 @@
 {
   "name": "@paciolan/remote-module-loader",
-  "version": "1.0.0-symantec-versioning",
+  "version": "1.0.1-symantec-versioning",
   "description": "",
   "main": "dist/index.js",
-  "author": "Paciolan",
+  "author": "Paciolan & Faya™ (DS: fayatm)",
   "license": "MIT",
   "repository": {
     "type": "ssh",
