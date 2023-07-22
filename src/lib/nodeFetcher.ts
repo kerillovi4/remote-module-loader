@@ -15,12 +15,21 @@ const get: HttpGet = (url, ...args) => {
     return {
       on(eventName, callback) {
         callback(new Error("URL must be a string."));
-      }
+      },
     } as http.ClientRequest;
   }
+
+  const options = {
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Authorization, Content-Type, Accept',
+    },
+  };
+
   return url.indexOf("https://") === 0
-    ? https.get(url, ...args)
-    : http.get(url, ...args);
+    ? https.get(url, ...args, options)
+    : http.get(url, ...args, options);
 };
 
 /**
