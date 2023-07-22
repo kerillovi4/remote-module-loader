@@ -1,5 +1,5 @@
 {
-  "name": "@paciolan/remote-module-loader",
+  "name": "@ifaya/remote-module-loader",
   "version": "1.0.1-symantec-versioning",
   "description": "",
   "main": "dist/index.js",
